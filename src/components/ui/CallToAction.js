@@ -104,13 +104,13 @@ export default function CallToAction(props) {
           <Grid item>
             {matchesMD ? (
               <Typography variant="h2">
-                We Are Old Students Of Adeolu Secondary School!!! <br />{" "}
-                Revolutionary People
+                We are a passionate and results-oriented digital marketing
+                agency!!! <br /> Revolutionary Results
               </Typography>
             ) : (
               <Typography variant="h2" style={{ fontSize: "1.5rem" }}>
-                We Are Old Students Of Adeolu Secondary School!!! <br />{" "}
-                Revolutionary People
+                We are a passionate and results-oriented digital marketing
+                agency!!! <br /> Revolutionary Results
               </Typography>
             )}
             {matchesMD ? (

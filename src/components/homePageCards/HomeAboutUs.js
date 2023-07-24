@@ -512,32 +512,40 @@ export default function HomeAboutUs(props) {
                 </Typography>
                 <Typography variant="h5" color="textSecondary" component="p">
                   <ReactMarkdown>
-                    * Association of Old students of Adeolu Secondary School
-                    (Assosa) are a group of people that attended Adeolu
-                    Secondary School, Tolu School Complex, Lagos who are binded
-                    together by same purpose, mission and vision to make a
-                    positive impacts on our alma mata, our community and most
-                    especially on our members
+                    * Welcome to DNinjas, where limitless possibilities meet
+                    extraordinary success! We are a dynamic and results-driven
+                    digital marketing agency committed to propelling your
+                    business to new heights in the online realm. Our passion
+                    lies in harnessing the power of digital marketing strategies
+                    to unlock your business potential and deliver remarkable
+                    outcomes.
                   </ReactMarkdown>
                 </Typography>
                 <Typography variant="h5" color="textSecondary" component="p">
                   <ReactMarkdown>
-                    * Our Vision is to promote a platform for collaboration,
-                    networking, engagement and outreach among old students of
-                    adeolu secondary school
+                    * In today's fast-paced and ever-evolving digital landscape,
+                    it takes more than just a website or a social media presence
+                    to stand out from the crowd. It requires a comprehensive and
+                    innovative approach that combines creativity, data-driven
+                    insights, and cutting-edge technologies. That's where we
+                    come in.
                   </ReactMarkdown>
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="h5"
                   color="textSecondary"
                   component="p"
                   //style={{ marginLeft: 20 }}
                 >
                   <ReactMarkdown>
-                    * Our Mission is to harness our collective strength and
-                    uniqueness to elevate our Alma mater, encourage and assist
-                    current students , care for one another as members and
-                    impact the society at large
+                    * At DNinjas Limited, we understand that your business is
+                    unique, with its own set of goals, challenges, and
+                    aspirations. Our mission is to craft personalized digital
+                    marketing solutions tailored to your specific needs,
+                    ensuring your brand shines brightly amidst the digital
+                    noise. Whether you're a startup, a small business, or a
+                    large enterprise, we have the expertise and passion to drive
+                    your success.
                   </ReactMarkdown>
                 </Typography>
                 <Typography
@@ -547,13 +555,31 @@ export default function HomeAboutUs(props) {
                   style={{ marginTop: 20 }}
                 >
                   <ReactMarkdown>
-                    * From the graduation of the first of batch of students in
-                    1986, Adeolu Secondary Secondary, Tolu School Village, Lagos
-                    had produced graduants till this day. These graduants are
-                    scattered all over the world dominating their world in
-                    various fields
+                    * Our team of dedicated marketing strategists, creative
+                    minds, and tech-savvy professionals works tirelessly to
+                    provide you with a holistic range of services. From search
+                    engine optimization (SEO) to social media marketing,
+                    pay-per-click (PPC) advertising to content creation, we have
+                    the skills and knowledge to create compelling campaigns that
+                    captivate your target audience
                   </ReactMarkdown>
                 </Typography>
+                <Typography
+                  variant="h5"
+                  color="textSecondary"
+                  component="p"
+                  style={{ marginTop: 20 }}
+                >
+                  <ReactMarkdown>
+                    * What sets us apart is our unwavering commitment to your
+                    success. We believe in establishing long-term partnerships
+                    built on trust, transparency, and mutual growth. When you
+                    choose DNinjas Limited, you're not just getting a digital
+                    marketing agency; you're gaining a trusted ally, an
+                    extension of your own team, relentlessly driven to achieve
+                    greatness alongside you.
+                  </ReactMarkdown>
+                </Typography> */}
                 <Button
                   component={Link}
                   // to="/mobileapps"

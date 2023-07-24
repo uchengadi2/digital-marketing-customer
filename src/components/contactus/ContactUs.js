@@ -24,7 +24,7 @@ import CallToAction from "./../ui/CallToAction";
 import revolutionBackground from "./../../assets/repeatingBackground.svg";
 import infoBackground from "./../../assets/infoBackground.svg";
 
-import background from "./../../assets/images/headers/contactus.png";
+import background from "./../../assets/images/headers/contact2.png";
 import UpperFooter from "./../ui/UpperFooter";
 import TopCover from "./../homePageCards/TopCover";
 import LearningPath from "./../homePageCards/LearningPath";

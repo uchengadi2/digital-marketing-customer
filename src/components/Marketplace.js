@@ -25,15 +25,22 @@ import infoBackground from "./../assets/infoBackground.svg";
 
 import background from "./../assets/images/headers/home.png";
 import UpperFooter from "./ui/UpperFooter";
-import TopCover from "./homePageCards/TopCover";
-import LearningPath from "./homePageCards/LearningPath";
-import HomeAboutUs from "./homePageCards/HomeAboutUs";
-import HomeMembershipSection from "./homePageCards/HomeMembershipSection";
-import HomeProjectSectionSection from "./homePageCards/HomeProjectSectionSection";
-import HomeEventsSection from "./homePageCards/HomeEventsSection";
-import HomeNoticeBoardSection from "./homePageCards/HomeNoticeBoardSection";
-import HomeContactUs from "./homePageCards/HomeContactUs";
-import HomeConnectionsSection from "./homePageCards/HomeConnectionsSection";
+
+import HomeBrandingSection from "./homePageCards/HomeBrandingSection";
+import WhoWeAreHeader from "./homePageCards/WhoWeAreHeader";
+import BrandingSectionTitle from "./homePageCards/BrandingSectionTitle";
+import HomeWebsiteServicesSection from "./homePageCards/HomeWebsiteServicesSection";
+import WebsiteDesignSectionTitle from "./homePageCards/WebsiteDesignSectionTitle";
+import HomeSEOSection from "./homePageCards/HomeSEOSection";
+import SEOSectionTitle from "./homePageCards/SEOSectionTitle";
+import ContentAndEmailMarketingSection from "./homePageCards/ContentAndEmailMarketingSection";
+import ContentAndEmailMarketingTitle from "./homePageCards/ContentAndEmailMarketingTitle";
+import PPCSectionTitle from "./homePageCards/PPCSectionTitle";
+import HomePPCSection from "./homePageCards/HomePPCSection";
+import HomeWebAndAppSection from "./homePageCards/HomeWebAndAppSection";
+import WebAndAppSectionTitle from "./homePageCards/WebAndAppSectionTitle";
+import ExecutivesSocialSectionTitle from "./homePageCards/ExecutivesSocialSectionTitle";
+import HomeExecutivesSocialMediaSection from "./homePageCards/HomeExecutivesSocialMediaSection";
 
 //import mobileBackground from "./../../assets/mobileBackground.jpg";
 
@@ -555,25 +562,44 @@ const Marketplace = (props) => {
                       <span
                         style={{
                           marginLeft: matchesSM ? 20 : 5,
+                          color: "#E966A0",
                         }}
                       >
-                        {" "}
-                        We are old students of Adeolu Secondary School, <br />
-                      </span>{" "}
-                      <span style={{ marginLeft: matchesSM ? 20 : 50 }}>
-                        Tolu School Village, Lagos, bonded together
+                        We are a passionate and results-oriented digital
+                        marketing agency <br />
+                      </span>
+                      <span
+                        style={{
+                          marginLeft: matchesSM ? 20 : 50,
+                        }}
+                      >
+                        dedicated to elevating your business in the online
+                        world.
                       </span>
                       <br />
-                      <span style={{ marginLeft: matchesSM ? 20 : 90 }}>
-                        to make positive impacts on our
+                      <span
+                        style={{
+                          marginLeft: matchesSM ? 20 : 90,
+                        }}
+                      >
+                        Our expertise lies in utilizing effective digital
+                        marketing
                       </span>
                       <br />
-                      <span style={{ marginLeft: matchesSM ? 20 : 110 }}>
-                        Alma Mata, our Community
+                      <span
+                        style={{
+                          marginLeft: matchesSM ? 20 : 110,
+                        }}
+                      >
+                        strategies to unlock your business potentials and
                       </span>
                       <br />
-                      <span style={{ marginLeft: matchesSM ? 20 : 180 }}>
-                        and our Members
+                      <span
+                        style={{
+                          marginLeft: matchesSM ? 20 : 180,
+                        }}
+                      >
+                        achieve exceptional results.
                       </span>
                       <br />
                       {/* <span style={{ marginLeft: matchesSM ? 20 : 130 }}></span> */}
@@ -649,22 +675,30 @@ const Marketplace = (props) => {
           </Grid>
         </Grid>
         {/* </section> */}
-
-        <HomeAboutUs />
-        <HomeMembershipSection />
-        <HomeConnectionsSection />
-        <HomeProjectSectionSection />
-        <HomeEventsSection />
-        <HomeNoticeBoardSection />
+        <WhoWeAreHeader />
+        <BrandingSectionTitle />
+        <HomeBrandingSection />
+        {/* <WebsiteDesignSectionTitle /> */}
+        <HomeWebsiteServicesSection />
+        {/* <SEOSectionTitle /> */}
+        <HomeSEOSection />
+        {/* <ContentAndEmailMarketingTitle /> */}
+        <ContentAndEmailMarketingSection />
+        {/* <PPCSectionTitle /> */}
+        <HomePPCSection />
+        {/* <WebAndAppSectionTitle /> */}
+        <HomeWebAndAppSection />
+        {/* <ExecutivesSocialSectionTitle /> */}
+        <HomeExecutivesSocialMediaSection />
         {/* <HomeContactUs /> */}
-        {isLoading && (
+        {/* {isLoading && (
           <CircularProgress
             size={100}
             color="inherit"
             style={{ marginTop: 250, marginLeft: 650 }}
           />
         )}
-        {!isLoading && <Grid item>{allCoursesList}</Grid>}
+        {!isLoading && <Grid item>{allCoursesList}</Grid>} */}
 
         <Grid item className={classes.footer}>
           <UpperFooter />

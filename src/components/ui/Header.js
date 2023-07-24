@@ -54,6 +54,15 @@ import { FaLaptopHouse } from "react-icons/fa";
 import OrderPage from "../orders/OrderPage";
 import ProfileLayout from "../ProfileLayout";
 import AboutUs from "../aboutus/AboutUs";
+import Branding from "../branding/Branding";
+import WebsitePage from "../website/WebsitePage";
+import SeoPage from "../seo/SeoPage";
+import ContentPage from "../content/ContentPage";
+import PpcPage from "../ppc/PpcPage";
+import BlogPage from "../blog/BlogPage";
+import WebAppPage from "../webapp/WebAppPage";
+import ExecSocialPage from "../executives/ExecSocialPage";
+
 import Membership from "../membership/Membership";
 import Connection from "../connections/Connection";
 import Events from "../events/Events";
@@ -155,7 +164,7 @@ const useStyles = makeStyles((theme) => ({
   cart: {
     ...theme.typography.estimate,
     borderRadius: "250px",
-    marginLeft: "3px",
+    marginLeft: "2px",
     marginRight: "2px",
     height: "45px",
     fontSize: "13px",
@@ -166,10 +175,108 @@ const useStyles = makeStyles((theme) => ({
       color: "white",
     },
   },
-  events: {
+  social: {
     ...theme.typography.estimate,
     borderRadius: "250px",
-    marginLeft: "3px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "200px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  executive: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "230px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  seo: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "50px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  ppc: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "50px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  website: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "140px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  content: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "260px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  app: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
+    marginRight: "2px",
+    height: "45px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    width: "130px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  nocode: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "2px",
     marginRight: "2px",
     height: "45px",
     fontSize: "13px",
@@ -215,6 +322,20 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "2px",
     height: "45px",
     width: "120px",
+    fontSize: "13px",
+    fontWeight: "500px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+      color: "white",
+    },
+  },
+  mvp: {
+    ...theme.typography.estimate,
+    borderRadius: "250px",
+    marginLeft: "3px",
+    marginRight: "2px",
+    height: "45px",
+    width: "70px",
     fontSize: "13px",
     fontWeight: "500px",
     "&:hover": {
@@ -292,7 +413,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootMobile: {
     maxWidth: "100%",
-    width: "100%",
+    width: "80%",
     height: 20,
     "& .MuiFilledInput-root": {
       background: "white",
@@ -550,59 +671,93 @@ const Header = (props) => {
             About Us
           </Button>
           <Button
-            onClick={() => <Membership />}
+            onClick={() => <Branding />}
             disableRipple
             component={Link}
             // to={`/carts/${props.userId}`}
-            to={`/membership`}
+            to={`/branding`}
             className={classes.cart}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Membership
+            Branding
           </Button>
-          {/* <Button
-            onClick={() => <ShowCustomerCart />}
+          <Button
+            onClick={() => <WebsitePage />}
             disableRipple
             component={Link}
             // to={`/carts/${props.userId}`}
-            to={`/carts`}
-            className={classes.checkout}
+            to={`/website`}
+            className={classes.website}
           >
-           
-            Connections
-          </Button> */}
+            {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
+            Website
+          </Button>
+
           <Button
-            onClick={() => <Events />}
+            onClick={() => <SeoPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/events`}
-            className={classes.events}
+            to={`/seo`}
+            className={classes.seo}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Events & Gallery
+            SEO
           </Button>
           <Button
-            onClick={() => <Project />}
+            onClick={() => <ContentPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/projects`}
-            className={classes.checkout}
+            to={`/contents`}
+            className={classes.content}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Projects
+            Content & Email Marketing
           </Button>
           <Button
-            onClick={() => <NoticeBoard />}
+            onClick={() => <PpcPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/noticeboard`}
-            className={classes.checkout}
+            to={`/ppc`}
+            className={classes.ppc}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Notice Board
+            PPC
+          </Button>
+          <Button
+            onClick={() => <WebAppPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/webapp`}
+            className={classes.social}
+          >
+            {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
+            Web & App
+          </Button>
+
+          <Button
+            onClick={() => <ExecSocialPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/execsocials`}
+            className={classes.executive}
+          >
+            {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
+            Executive Social Media
+          </Button>
+          <Button
+            onClick={() => <BlogPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/blog`}
+            className={classes.mvp}
+          >
+            Blog
           </Button>
           <Button
             onClick={() => <ContactUs />}
@@ -610,21 +765,10 @@ const Header = (props) => {
             component={Link}
             // to={`/checkouts/${props.userId}`}
             to={`/contactus`}
-            className={classes.checkout}
+            className={classes.nocode}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
             Contact Us
-          </Button>
-          <Button
-            variant="contained"
-            // component={Link}
-            // to="/logout"
-            color="secondary"
-            className={classes.button}
-            //onClick={() => [setOpenLoginForm(true), history.push("/")]}
-            onClick={() => [setOpenLoginForm(true)]}
-          >
-            Sign In
           </Button>
         </Fragment>
       );
@@ -643,59 +787,90 @@ const Header = (props) => {
             About Us
           </Button>
           <Button
-            onClick={() => <Membership />}
+            onClick={() => <Branding />}
             disableRipple
             component={Link}
             // to={`/carts/${props.userId}`}
-            to={`/membership`}
+            to={`/branding`}
             className={classes.cart}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Membership
+            Branding
           </Button>
           <Button
-            onClick={() => <Connection />}
+            onClick={() => <WebsitePage />}
             disableRipple
             component={Link}
             // to={`/carts/${props.userId}`}
-            to={`/connections`}
-            className={classes.checkout}
+            to={`/website`}
+            className={classes.website}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Connections
+            Website
           </Button>
+
           <Button
-            onClick={() => <Events />}
+            onClick={() => <SeoPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/events`}
-            className={classes.events}
+            to={`/seo`}
+            className={classes.seo}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Events & Gallery
+            SEO
           </Button>
           <Button
-            onClick={() => <Project />}
+            onClick={() => <ContentPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/projects`}
-            className={classes.checkout}
+            to={`/contents`}
+            className={classes.content}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Projects
+            Content & Email Marketing
           </Button>
           <Button
-            onClick={() => <NoticeBoard />}
+            onClick={() => <PpcPage />}
             disableRipple
             component={Link}
             // to={`/checkouts/${props.userId}`}
-            to={`/noticeboard`}
-            className={classes.checkout}
+            to={`/ppc`}
+            className={classes.ppc}
+          >
+            PPC
+          </Button>
+          <Button
+            onClick={() => <WebAppPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/webapp`}
+            className={classes.social}
+          >
+            Web & App
+          </Button>
+          <Button
+            onClick={() => <ExecSocialPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/execsocials`}
+            className={classes.executive}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Notice Board
+            Executive Social Media
+          </Button>
+          <Button
+            onClick={() => <BlogPage />}
+            disableRipple
+            component={Link}
+            // to={`/checkouts/${props.userId}`}
+            to={`/blog`}
+            className={classes.mvp}
+          >
+            Blog
           </Button>
           <Button
             onClick={() => <ContactUs />}
@@ -703,23 +878,12 @@ const Header = (props) => {
             component={Link}
             // to={`/checkouts/${props.userId}`}
             to={`/contactus`}
-            className={classes.checkout}
+            className={classes.nocode}
           >
             {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
             Contact Us
           </Button>
-          <Button
-            onClick={() => <ProfileLayout />}
-            disableRipple
-            component={Link}
-            // to={`/profile/${props.userId}`}
-            to={`/profile`}
-            className={classes.checkout}
-          >
-            {/* <img alt="company logo" src={logo} className={classes.logo} /> */}
-            Profile
-          </Button>
-          <Button
+          {/* <Button
             variant="contained"
             // component={Link}
             // to="/logout"
@@ -729,7 +893,7 @@ const Header = (props) => {
             onClick={() => [setOpenLogOut(true)]}
           >
             Sign Out
-          </Button>
+          </Button> */}
         </Fragment>
       );
     }
@@ -745,29 +909,6 @@ const Header = (props) => {
         // { name: "Career", link: `/career`, activeIndex: 1 },
         // { name: "Profile", link: "/profile", activeIndex: 2 },
       ];
-
-  // useEffect(() => {
-  //   [...menuOptions, ...routes].forEach((route) => {
-  //     switch (window.location.pathname) {
-  //       case `${route.link}`:
-  //         if (props.value !== route.activeIndex) {
-  //           props.setValue(route.activeIndex);
-  //           if (
-  //             route.selectedIndex &&
-  //             RouterRounded.selectedIndex !== props.selectedIndex
-  //           ) {
-  //             props.setSelectedIndex(route.selectedIndex);
-  //           }
-  //         }
-  //         break;
-  //       case "/logout":
-  //         props.setValue(5);
-  //         break;
-  //       default:
-  //         break;
-  //     }
-  //   });
-  // }, [props.value, menuOptions, props.selectedIndex, routes, props]);
 
   const tabs = (
     <React.Fragment>
@@ -821,28 +962,6 @@ const Header = (props) => {
         //onClose={() => [setOpenLoginForm(false), history.push("/")]}
         onClose={() => [setOpenLoginForm(false)]}
       >
-        {/* <DialogContent>
-          <UserLogin
-            handleLoginDialogOpenStatus={handleLoginDialogOpenStatus}
-            handleMakeOpenSignUpDialogStatus={handleMakeOpenSignUpDialogStatus}
-            handleMakeCloseSignUpDialogStatus={
-              handleMakeCloseSignUpDialogStatus
-            }
-            handleLoginDialogCloseStatus={handleLoginDialogCloseStatus}
-            handleMakeOpenForgotPasswordFormDialogStatus={
-              handleMakeOpenForgotPasswordFormDialogStatus
-            }
-            handleSuccessfulLoginDialogOpenStatusWithSnackbar={
-              handleSuccessfulLoginDialogOpenStatusWithSnackbar
-            }
-            handleFailedLoginDialogOpenStatusWithSnackbar={
-              handleFailedLoginDialogOpenStatusWithSnackbar
-            }
-            setToken={props.setToken}
-            setUserId={props.setUserId}
-          />
-        </DialogContent> */}
-
         <DialogContent>
           <LoginForm
             handleLoginDialogOpenStatus={handleLoginDialogOpenStatus}
@@ -1004,11 +1123,6 @@ const Header = (props) => {
         <List disablePadding>
           {routes.map((route) => (
             <ListItem
-              //   className={
-              //     value === route.activeIndex
-              //       ? [classes.drawerItem, classes.drawerItemSelected]
-              //       : classes.drawerItem
-              //   }
               className={classes.drawerItem}
               divider
               key={`${route}${route.activeIndex}`}
@@ -1034,11 +1148,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <AboutUs />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1061,11 +1170,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <Membership />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1078,7 +1182,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Membership
+                  Branding
                 </ListItemText>
               </ListItem>
 
@@ -1089,11 +1193,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <Events />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1106,7 +1205,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Events & Galary
+                  Website
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1116,11 +1215,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <Project />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1133,7 +1227,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Projects
+                  SEO
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1160,7 +1254,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Notice Boards
+                  Content Marketing
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1170,11 +1264,94 @@ const Header = (props) => {
                   props.setValue(5),
                   <ContactUs />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  PPC
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  Web & App
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  Executive Social Media
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  Blog
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
                 divider
                 button
                 component={Link}
@@ -1261,7 +1438,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Membership
+                  Website & App
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1283,7 +1460,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Connections
+                  SEO
                 </ListItemText>
               </ListItem>
 
@@ -1294,11 +1471,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <Events />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1311,7 +1483,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Events & Galary
+                  Content Marketing
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1321,11 +1493,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <Project />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1338,7 +1505,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Projects
+                  PPC
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1348,11 +1515,6 @@ const Header = (props) => {
                   props.setValue(5),
                   <NoticeBoard />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
                 divider
                 button
                 component={Link}
@@ -1365,7 +1527,7 @@ const Header = (props) => {
                 selected={props.value === 5}
               >
                 <ListItemText className={classes.drawerItem} disableTypography>
-                  Notice Boards
+                  No Code Services
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -1375,11 +1537,50 @@ const Header = (props) => {
                   props.setValue(5),
                   <ContactUs />,
                 ]}
-                // onClick={() => [
-                //   setOpenLoginForm(false),
-                //   history.push(`/orders/${props.userId}`),
-                // ]}
-                //onClick={() => [setOpenLoginForm(true)]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  Executive Social Media
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
+                divider
+                button
+                component={Link}
+                // to={`/orders/${props.userId}`}
+                to={`/contactus`}
+                classes={{
+                  root: classes.drawerItem,
+                  selected: classes.drawerItemSelected,
+                }}
+                selected={props.value === 5}
+              >
+                <ListItemText className={classes.drawerItem} disableTypography>
+                  Blog
+                </ListItemText>
+              </ListItem>
+              <ListItem
+                className={classes.drawerItem}
+                onClick={() => [
+                  setOpenDrawer(false),
+                  props.setValue(5),
+                  <ContactUs />,
+                ]}
                 divider
                 button
                 component={Link}

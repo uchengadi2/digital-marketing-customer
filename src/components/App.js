@@ -31,6 +31,15 @@ import EventDetails from "./events/EventDetails";
 import ProjectDetails from "./projects/ProjectDetails";
 import NoticeboardDetails from "./noticeboard/NoticeboardDetails";
 
+import Branding from "./branding/Branding";
+import WebsitePage from "./website/WebsitePage";
+import SeoPage from "./seo/SeoPage";
+import ContentPage from "./content/ContentPage";
+import PpcPage from "./ppc/PpcPage";
+import WebAppPage from "./webapp/WebAppPage";
+import BlogPage from "./blog/BlogPage";
+import ExecSocialPage from "./executives/ExecSocialPage";
+
 import OrderPage from "./orders/OrderPage";
 import SearchPage from "./search/SearchPage";
 import AboutUs from "./aboutus/AboutUs";
@@ -234,14 +243,75 @@ function App() {
                 setUserId={setUserId ? setUserId : {}}
               />
             </Route>
-            <Route path="/membership">
-              <Membership
+
+            <Route path="/website">
+              <WebsitePage
                 token={token}
                 userId={userId}
                 setToken={setToken ? setToken : {}}
                 setUserId={setUserId ? setUserId : {}}
               />
             </Route>
+            <Route path="/seo">
+              <SeoPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+
+            <Route path="/branding">
+              <Branding
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+
+            <Route path="/contents">
+              <ContentPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+            <Route path="/ppc">
+              <PpcPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+            <Route path="/webapp">
+              <WebAppPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+            <Route path="/blog">
+              <BlogPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+
+            <Route path="/execsocials">
+              <ExecSocialPage
+                token={token}
+                userId={userId}
+                setToken={setToken ? setToken : {}}
+                setUserId={setUserId ? setUserId : {}}
+              />
+            </Route>
+
             <Route path="/connections">
               <Connection
                 token={token}
